@@ -1,0 +1,25 @@
+<h1 class="main-heading">
+  Cookbook Index
+</h1>
+
+
+<% @recipes.each_with_index do |recipe, index| %>
+  <div>
+    <h3>
+      <%= recipe.name %>
+    </h3>
+    <p>
+      <%= recipe.rating%>
+    </p>
+    <p>
+      <%= recipe.prep_time%>
+    </p>
+    <p>
+      <%= recipe.description%>
+    </p>
+    <%= index %>
+    <%= "<button> <a href=\"/delete/:#{index}\"> Delete this recipe</a> </button> "%>
+  </div>
+<% end %>
+
+<a href="/new"> Add new recipe?</a>

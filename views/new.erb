@@ -1,0 +1,36 @@
+<form action="recipes" method="POST">
+	<!-- text input-->
+	<label> Recipe Name </label>
+  <br>
+	<input type="text" name="name">
+  <br>
+
+  <%# Description %>
+  <label> Description: </label>
+  <br>
+	<textarea name="description"></textarea>
+  <br>
+
+  <%# Rating %>
+  <label> Ratings: </label>
+  <br>
+	<input type="number" name="rating" value="0">
+  <br>
+
+  <%# Prep time %>
+  <label> Prep time: </label>
+  <br>
+	<input type="text" name="preptime">
+  <br>
+
+
+	<%# <!-- Selection bar -->
+	<select name="gender">
+		<option value="male"> Male</option>
+		<option value="female"> Female</option>
+	</select> %>
+
+	<!-- submit -->
+	<input type="submit" name="submitbutton">
+
+</form>
